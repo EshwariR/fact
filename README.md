@@ -2,9 +2,9 @@
   int fact(int n)
   {
   int f=1;
-  for(int i=1;i<=n;i++)
-    f=f*i;
-  return f;
+  if(n==1)
+  return 1;
+  return n*fact(n-1);
  }
 void main()
 {
